@@ -1,0 +1,44 @@
+# Deploys the site to AWS: S3 bucket behind CloudFront (see greenlight-infra, environments/shared/website.tf).
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+env:
+  AWS_ACCOUNT_ID: "055562784902"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ env.AWS_ACCOUNT_ID }}:role/bara-website-deploy
+          aws-region: us-east-1
+
+      - name: Upload files
+        run: |
+          aws s3 sync . "s3://bara-website-${AWS_ACCOUNT_ID}" --delete \
+            --exclude ".git/*" --exclude ".github/*" --exclude "CNAME" --exclude ".nojekyll"
+
+      - name: Clear CloudFront cache
+        run: |
+          id=$(aws cloudfront list-distributions \
+            --query "DistributionList.Items[?Aliases.Items && contains(Aliases.Items, 'bara.social')].Id | [0]" \
+            --output text)
+          test -n "$id" && test "$id" != "None"
+          aws cloudfront create-invalidation --distribution-id "$id" --paths "/*"
