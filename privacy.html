@@ -1,29 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bara privacy policy</title>
-  <meta name="description" content="What Bara collects, how it is used, who can see it, and how to delete it.">
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bara privacy policy</title>
+<meta name="description" content="What Bara collects, how it is used, who can see it, and how to delete it.">
+<meta property="og:title" content="Bara privacy policy">
+<meta property="og:description" content="What Bara collects, how it is used, who can see it, and how to delete it.">
+<meta name="theme-color" content="#EFEFF1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1E21" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/HankenGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script src="main.js" defer></script>
 </head>
 <body>
-  <header class="wrap top">
-    <a class="logo" href="index.html" aria-label="Bara home">
-      <img src="img/logo.png" alt="Bara" width="560" height="218">
-    </a>
-    <nav aria-label="Main">
-      <a href="index.html#how">How it works</a>
-      <a href="privacy.html">Privacy</a>
-    </nav>
-  </header>
-
-  <main class="wrap doc">
-    <h1>Privacy policy</h1>
-    <p class="updated">Last updated November 5, 2026</p>
-
-    <p>Bara is run by Bara Inc. This policy explains what we collect, why, who can see it, and how you can delete it.</p>
+<div class="page">
+<header class="site-header">
+  <nav class="bar" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="Bara home"><img src="img/mark.svg" alt="" width="40" height="40"><span>bara</span></a>
+    <div class="nav-right">
+      <div class="nav-links"><a href="index.html#how">How it works</a><a href="safety.html">Safety</a><a href="support.html">Support</a></div>
+      <a class="download" href="index.html#get">Download the app<span class="soon">SOON</span></a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" hidden><a href="index.html#how">How it works</a><a href="safety.html">Safety</a><a href="support.html">Support</a></div>
+</header>
+<main>
+<article class="legal">
+  <div class="legal-head"><span class="kicker">Legal</span><h1>Privacy policy</h1><span class="mono">Last updated November 5, 2026</span></div>
+  <p>Bara is run by Bara Inc. This policy explains what we collect, why, who can see it, and how you can delete it.</p>
 
     <h2>What other people see</h2>
     <p>Other people see a made-up name, a colored shape, your status, and your interests. They never see your real name, photo, date of birth, phone number, email, or exact location.</p>
@@ -73,15 +81,17 @@
 
     <h2>Contact</h2>
     <p><a href="mailto:support@bara.social">support@bara.social</a></p>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <div class="row">
-        <span>&copy; 2026 Bara Inc</span>
-        <span><a href="mailto:support@bara.social">support@bara.social</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy policy</a></span>
-      </div>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-row">
+      <div class="footer-id"><img src="img/mark.svg" alt="" width="28" height="28"><span>© 2026 Bara Inc · <a href="mailto:support@bara.social">support@bara.social</a></span></div>
+      <div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></div>
     </div>
-  </footer>
+    <p class="footer-note">Screens show sample data. Place data © OpenStreetMap contributors.</p>
+  </div>
+</footer>
+</div>
 </body>
 </html>

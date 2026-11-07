@@ -1,138 +1,128 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bara: say hi to someone nearby</title>
-  <meta name="description" content="Bara helps people in the same place start talking. See who nearby is open to a chat, say hi, and meet if you both want to.">
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bara: say hi to someone nearby</title>
+<meta name="description" content="See who's around and open to talking right now. Have a short chat, and meet if you both want to. Coming soon to iPhone and Android.">
+<meta property="og:title" content="Bara: say hi to someone nearby">
+<meta property="og:description" content="See who's around and open to talking right now. Have a short chat, and meet if you both want to. Coming soon to iPhone and Android.">
+<meta name="theme-color" content="#EFEFF1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1E21" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/HankenGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script src="main.js" defer></script>
 </head>
 <body>
-  <header class="wrap top">
-    <a class="logo" href="index.html" aria-label="Bara home">
-      <img src="img/logo.png" alt="Bara" width="560" height="218">
-    </a>
-    <nav aria-label="Main">
-      <a href="#how">How it works</a>
-      <a href="privacy.html">Privacy</a>
-    </nav>
-  </header>
-
-  <main>
-    <div class="wrap hero">
-      <div>
-        <h1>Say hi to someone nearby.</h1>
-        <p class="lede">Bara helps people in the same place start talking. See who around you is open to a chat, say hi, and meet if you both want to. Nobody sees your name or photo.</p>
-        <span class="soon">Coming soon to iPhone and Android</span>
-        <p class="where">Launching first in the United States and Nepal</p>
-      </div>
-      <div class="phone">
-        <picture>
-          <source srcset="img/nearby-dark.jpg" media="(prefers-color-scheme: dark)">
-          <img src="img/nearby-light.jpg" alt="The Bara Nearby screen, listing people at a café by made-up names such as Maple-417, each with a status and shared interests." width="640" height="1391">
-        </picture>
-      </div>
+<div class="page">
+<header class="site-header">
+  <nav class="bar" aria-label="Main">
+    <a class="logo" href="#top" aria-label="Bara home"><img src="img/mark.svg" alt="" width="40" height="40"><span>bara</span></a>
+    <div class="nav-right">
+      <div class="nav-links"><a href="#how">How it works</a><a href="safety.html">Safety</a><a href="support.html">Support</a></div>
+      <a class="download" href="#get">Download the app<span class="soon">SOON</span></a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" hidden><a href="#how">How it works</a><a href="safety.html">Safety</a><a href="support.html">Support</a></div>
+</header>
+<main>
+<section id="how" aria-label="Bara, and how it works" data-stage="" class="stage">
+    <div data-stage-inner="" class="stage-inner">
+      <div aria-hidden="true" data-kf='[[0.15,-0.6,0.5,0.7,0,0,-20,0],[0.2,-0.4,0.36,1,0,0,-6,1],[0.29,-0.4,0.32,1,0,0,0,1],[0.33,-0.5,0.24,0.8,0,0,8,0]]' data-kf-base="c" class="kf kf-hidden kf-drift"><img class="art" src="img/art/nearby_empty.svg" alt="" width="500" height="500"></div>
+      <div aria-hidden="true" data-kf='[[0.33,0.6,0.5,0.7,0,0,20,0],[0.38,0.4,0.34,1,0,0,8,1],[0.46,0.4,0.3,1,0,0,14,1],[0.5,0.5,0.22,0.8,0,0,22,0]]' data-kf-base="c" class="kf kf-hidden kf-drift"><img class="art" src="img/art/onboarding_location.svg" alt="" width="600" height="600"></div>
+      <div aria-hidden="true" data-kf='[[0.32,-0.6,-0.1,0.7,0,0,-15,0],[0.37,-0.42,0,1,0,0,-4,1],[0.46,-0.42,-0.04,1,0,0,2,1],[0.5,-0.52,-0.12,0.8,0,0,10,0]]' data-kf-base="c" class="kf kf-hidden kf-drift"><img class="art" src="img/art/invisible.svg" alt="" width="512" height="512"></div>
+      <div aria-hidden="true" data-kf='[[0.5,0.6,-0.2,0.7,0,0,15,0],[0.55,0.42,-0.02,1,0,0,6,1],[0.66,0.42,-0.06,1,0,0,12,1],[0.7,0.52,-0.14,0.8,0,0,20,0]]' data-kf-base="c" class="kf kf-hidden kf-drift"><img class="art" src="img/art/onboarding_notifications.svg" alt="" width="600" height="600"></div>
+      <div aria-hidden="true" data-kf='[[0.5,-0.62,0.5,0.7,0,0,-18,0],[0.55,-0.43,0.3,1,0,0,-8,1],[0.66,-0.43,0.26,1,0,0,-2,1],[0.7,-0.53,0.18,0.8,0,0,6,0]]' data-kf-base="c" class="kf kf-hidden kf-drift"><img class="art" src="img/art/requests_empty.svg" alt="" width="500" height="500"></div>
+      <div aria-hidden="true" data-kf='[[0.72,0.6,0.5,0.7,0,0,18,0],[0.77,0.38,0.3,1,0,0,6,1],[1.18,0.38,0.26,1,0,0,12,1],[1.22,0.48,0.18,0.8,0,0,20,0]]' data-kf-base="c" class="kf kf-hidden kf-drift"><img class="art" src="img/art/onboarding_ready.svg" alt="" width="600" height="600"></div>
 
-    <section id="how">
-      <div class="wrap">
-        <p class="label">How it works</p>
-        <h2>From the same room to a real conversation.</h2>
-        <div class="steps">
-          <div class="step">
-            <div class="phone">
-              <picture>
-                <source srcset="img/explore-dark.jpg" media="(prefers-color-scheme: dark)">
-                <img src="img/explore-light.jpg" alt="The Explore screen listing nearby places with a count of people at each one." width="640" height="1391" loading="lazy">
-              </picture>
-            </div>
-            <h3>Find where people are</h3>
-            <p>Explore lists places near you and how many people are there, never who they are.</p>
-          </div>
-          <div class="step">
-            <div class="phone">
-              <picture>
-                <source srcset="img/place-dark.jpg" media="(prefers-color-scheme: dark)">
-                <img src="img/place-light.jpg" alt="A place card showing how many people are there, what they are into, and a Head here button." width="640" height="1391" loading="lazy">
-              </picture>
-            </div>
-            <h3>Head over</h3>
-            <p>See what people at a place are into, then get directions in your maps app.</p>
-          </div>
-          <div class="step">
-            <div class="phone">
-              <picture>
-                <source srcset="img/picker-dark.jpg" media="(prefers-color-scheme: dark)">
-                <img src="img/picker-light.jpg" alt="A Where are you? sheet listing nearby places to choose from, over the Nearby list." width="640" height="1391" loading="lazy">
-              </picture>
-            </div>
-            <h3>See who's open to talk</h3>
-            <p>Once you arrive, pick your spot. Nearby shows people within about 200 meters who are available right now.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <div data-kf='[[0,0,0,1,0,0,0,1],[0.07,0,0,1,0,0,0,1],[0.14,0,-0.1,1,0,0,0,0]]' data-kf-base="t" class="cap">
+        <span class="pill">Coming soon to iPhone and Android</span>
+        <h1 class="display">Say <mark style="--r:-2deg">hi</mark> to someone <mark style="--r:1.5deg">nearby</mark>.</h1>
+        <p class="lead">See who's around and open to talking right now. Have a short chat, and meet if you both want to.</p>
+        <span class="mono">Launching first in the United States and Nepal</span></div>
 
-    <section>
-      <div class="wrap">
-        <p class="label">Saying hi</p>
-        <h2>Nobody gets put on the spot.</h2>
-        <div class="cards">
-          <div class="card">
-            <p class="num">1</p>
-            <h3>Send a request</h3>
-            <p>Tap to say hi. If they accept, you're chatting. If they don't, nobody tells you who passed.</p>
-          </div>
-          <div class="card">
-            <p class="num">2</p>
-            <h3>Have a short chat</h3>
-            <p>Chats run on a timer, so there's no pressure to keep going. Others nearby can ask to join your table.</p>
-          </div>
-          <div class="card">
-            <p class="num">3</p>
-            <h3>Meet if you both want to</h3>
-            <p>If you both opt in, your made-up names become how you find each other in person.</p>
-          </div>
-        </div>
-        <p class="note">Bara is for any kind of conversation: a new friend, a work contact, or just a good chat. It isn't a dating app.</p>
-      </div>
-    </section>
+      <div data-kf='[[0,-0.34,0.22,1,0,0,-6,1],[0.12,-0.56,0.05,0.8,0,0,-14,0]]' data-kf-base="c" class="kf kf-hero-art"><img class="art" src="img/art/onboarding_alias.svg" alt="" width="512" height="512"></div>
+      <div data-kf='[[0,0.34,0.26,1,0,0,6,1],[0.12,0.56,0.08,0.8,0,0,14,0]]' data-kf-base="c" class="kf kf-hero-art"><img class="art" src="img/art/onboarding_moment.svg" alt="" width="600" height="600"></div>
 
-    <section id="safety">
-      <div class="wrap">
-        <p class="label">Privacy and safety</p>
-        <h2>Built so you stay in control.</h2>
-        <div class="cards">
-          <div class="card">
-            <img src="img/alias.svg" alt="" loading="lazy">
-            <h3>A different name for everyone</h3>
-            <p>People see a made-up name and a colored shape, and each person sees a different one.</p>
-          </div>
-          <div class="card">
-            <img src="img/location.svg" alt="" loading="lazy">
-            <h3>Your location stays yours</h3>
-            <p>Others only see that you're nearby. There's no pin on a map, and your exact location is never shown.</p>
-          </div>
-          <div class="card">
-            <img src="img/leave.svg" alt="" loading="lazy">
-            <h3>Leave any time</h3>
-            <p>Block, report, or leave a chat in one tap, with no explanation. A person you block is never told.</p>
-          </div>
-        </div>
-        <p class="note">Bara is for adults 18 and over, and every account is verified with a phone number. Read our <a href="privacy.html">privacy policy</a> for what we keep and why.</p>
-      </div>
-    </section>
-  </main>
+      <div data-kf='[[0.13,0,0.05,1,0,0,0,0],[0.18,0,0,1,0,0,0,1],[0.29,0,0,1,0,0,0,1],[0.33,0,-0.05,1,0,0,0,0]]' data-kf-base="t" class="cap kf-hidden"><span class="kicker">Nearby</span><h2 class="stage-h2">See who's <mark style="--r:-1.5deg">around</mark>.</h2><p class="lead">People within about 200 metres who are open to talk right now, each under a made-up name and a coloured shape. Each person sees a different one for you.</p></div>
+      <div data-kf='[[0.32,0,0.05,1,0,0,0,0],[0.36,0,0,1,0,0,0,1],[0.46,0,0,1,0,0,0,1],[0.5,0,-0.05,1,0,0,0,0]]' data-kf-base="t" class="cap kf-hidden"><span class="kicker">Explore</span><h2 class="stage-h2">Find a <mark style="--r:1.5deg">place</mark>.</h2><p class="lead">Explore shows places near you and how many people are there, never who they are. Head over and pick your spot.</p></div>
+      <div data-kf='[[0.49,0,0.05,1,0,0,0,0],[0.53,0,0,1,0,0,0,1],[0.66,0,0,1,0,0,0,1],[0.7,0,-0.05,1,0,0,0,0]]' data-kf-base="t" class="cap kf-hidden"><span class="kicker">Saying hi</span><h2 class="stage-h2">Nobody gets put on the <mark style="--r:-1.5deg">spot</mark>.</h2><p class="lead">If they don't accept, you're not told who passed. Chats run on a timer, and adding time needs both people to agree.</p></div>
+      <div data-kf='[[0.69,0,0.05,1,0,0,0,0],[0.74,0,0,1,0,0,0,1],[1,0,0,1,0,0,0,1]]' data-kf-base="t" class="cap kf-hidden"><span class="kicker">Open tables</span><h2 class="stage-h2">Chats can <mark style="--r:1.5deg">grow</mark>.</h2><p class="lead">Others nearby can knock to join, up to 3 people at a table.</p></div>
 
-  <footer>
-    <div class="wrap">
-      <div class="row">
-        <span>&copy; 2026 Bara Inc</span>
-        <span><a href="mailto:support@bara.social">support@bara.social</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy policy</a></span>
+      <div data-flip="" data-kf='[[0,0,0.64,1,8,-16,5,1],[0.06,0,0.58,1,6,-12,4,1],[0.17,0,0.4,1,0,0,0,1],[0.3,0,0.4,1,0,0,0,1],[0.37,0,0.4,1,0,180,0,1],[0.46,0,0.4,1,0,180,0,1],[0.52,0,0.5,0.92,0,180,0,0]]' data-kf-base="c" class="kf kf-flip">
+        <div data-face="front"><div class="phone"><div class="phone-screen"><picture><source media="(prefers-color-scheme: dark)" srcset="img/screens/nearby-dark-400.webp 400w, img/screens/nearby-dark-800.webp 800w" sizes="min(360px, 36svh, 74vw)"><img src="img/screens/nearby-light-800.webp" srcset="img/screens/nearby-light-400.webp 400w, img/screens/nearby-light-800.webp 800w" sizes="min(360px, 36svh, 74vw)" alt="Bara's Nearby screen listing people under made-up names like Meadow-019" width="800" height="1739" decoding="async" fetchpriority="high"></picture></div></div></div>
+        <div data-face="back" class="face-back"><div class="phone"><div class="phone-screen"><picture><source media="(prefers-color-scheme: dark)" srcset="img/screens/explore-dark-400.webp 400w, img/screens/explore-dark-800.webp 800w" sizes="min(360px, 36svh, 74vw)"><img src="img/screens/explore-light-800.webp" srcset="img/screens/explore-light-400.webp 400w, img/screens/explore-light-800.webp 800w" sizes="min(360px, 36svh, 74vw)" alt="Explore screen with nearby venues and a count of people at each" width="800" height="1739" decoding="async" loading="lazy"></picture></div></div></div>
       </div>
-      <p class="fine">Screens show sample data. Place data &copy; OpenStreetMap contributors.</p>
+
+      <div data-kf='[[0.16,-0.45,0.04,0.8,0,0,-4,0],[0.21,-0.25,0.04,1,0,0,-4,1],[0.28,-0.25,0.04,1,0,0,-4,1],[0.32,-0.425,-0.01,0.85,0,0,-4,0]]' data-kf-base="c" class="kf kf-hidden chip"><span class="shape shape-a"></span><span class="chip-text"><span class="chip-name">Meadow-019</span><span class="chip-status">Open to talk</span></span></div>
+      <div data-kf='[[0.18,0.468,0.17,0.8,0,0,3,0],[0.23,0.26,0.17,1,0,0,3,1],[0.28,0.26,0.17,1,0,0,3,1],[0.32,0.442,0.12,0.85,0,0,3,0]]' data-kf-base="c" class="kf kf-hidden chip"><span class="shape shape-b"></span><span class="chip-text"><span class="chip-name">Cypress-952</span><span class="chip-status">Here till 3</span></span></div>
+      <div data-kf='[[0.2,-0.396,0.32,0.8,0,0,2,0],[0.25,-0.22,0.32,1,0,0,2,1],[0.28,-0.22,0.32,1,0,0,2,1],[0.32,-0.374,0.27,0.85,0,0,2,0]]' data-kf-base="c" class="kf kf-hidden chip"><span class="shape shape-c"></span><span class="chip-text"><span class="chip-name">Cliff-609</span><span class="chip-status">Reading by the window</span></span></div>
+
+      <div data-kf='[[0.35,0.45,0.04,0.8,0,0,3,0],[0.4,0.25,0.04,1,0,0,3,1],[0.45,0.25,0.04,1,0,0,3,1],[0.49,0.425,-0.01,0.85,0,0,3,0]]' data-kf-base="c" class="kf kf-hidden tag">How many, never who</div>
+      <div data-kf='[[0.37,-0.45,0.17,0.8,0,0,-3,0],[0.42,-0.25,0.17,1,0,0,-3,1],[0.45,-0.25,0.17,1,0,0,-3,1],[0.49,-0.425,0.12,0.85,0,0,-3,0]]' data-kf-base="c" class="kf kf-hidden tag">No pin on a map</div>
+      <div data-kf='[[0.39,0.414,0.32,0.8,0,0,-2,0],[0.44,0.23,0.32,1,0,0,-2,1],[0.45,0.23,0.32,1,0,0,-2,1],[0.49,0.391,0.27,0.85,0,0,-2,0]]' data-kf-base="c" class="kf kf-hidden tag">Quiet places stay hidden</div>
+
+      <div data-kf='[[0.47,0,0.7,0.612,0,0,0,0,0],[0.53,0,0.205,0.68,0,0,-6,1,-0.9],[0.65,0,0.205,0.68,0,0,-6,1,-0.9],[0.71,0,0.3,0.578,0,0,0,0,0]]' data-kf-base="c" class="kf kf-hidden z1"><div class="phone"><div class="phone-screen"><picture><source media="(prefers-color-scheme: dark)" srcset="img/screens/person-card-dark-400.webp 400w, img/screens/person-card-dark-800.webp 800w" sizes="min(360px, 36svh, 74vw)"><img src="img/screens/person-card-light-800.webp" srcset="img/screens/person-card-light-400.webp 400w, img/screens/person-card-light-800.webp 800w" sizes="min(360px, 36svh, 74vw)" alt="A person card with a chat request button" width="800" height="1739" decoding="async" loading="lazy"></picture></div></div></div>
+      <div data-kf='[[0.49,0,0.7,0.612,0,0,0,0,0],[0.55,0,0.205,0.68,0,0,6,1,0.9],[0.65,0,0.205,0.68,0,0,6,1,0.9],[0.71,0,0.3,0.578,0,0,0,0,0]]' data-kf-base="c" class="kf kf-hidden z1"><div class="phone"><div class="phone-screen"><picture><source media="(prefers-color-scheme: dark)" srcset="img/screens/chat-met-dark-400.webp 400w, img/screens/chat-met-dark-800.webp 800w" sizes="min(360px, 36svh, 74vw)"><img src="img/screens/chat-met-light-800.webp" srcset="img/screens/chat-met-light-400.webp 400w, img/screens/chat-met-light-800.webp 800w" sizes="min(360px, 36svh, 74vw)" alt="The chat after both people opted in to meet" width="800" height="1739" decoding="async" loading="lazy"></picture></div></div></div>
+      <div data-kf='[[0.48,0,0.7,0.63,0,0,0,0,0],[0.54,0,0.205,0.7,0,0,0,1,0],[0.65,0,0.205,0.7,0,0,0,1,0],[0.71,0,0.3,0.595,0,0,0,0,0]]' data-kf-base="c" class="kf kf-hidden z2"><div class="phone"><div class="phone-screen"><picture><source media="(prefers-color-scheme: dark)" srcset="img/screens/chat-dark-400.webp 400w, img/screens/chat-dark-800.webp 800w" sizes="min(360px, 36svh, 74vw)"><img src="img/screens/chat-light-800.webp" srcset="img/screens/chat-light-400.webp 400w, img/screens/chat-light-800.webp 800w" sizes="min(360px, 36svh, 74vw)" alt="A one-to-one chat with a countdown" width="800" height="1739" decoding="async" loading="lazy"></picture></div></div></div>
+      <div data-kf='[[0.52,0,0.5,1,0,0,0,0],[0.57,0,0.455,1,0,0,0,1],[0.65,0,0.455,1,0,0,0,1],[0.69,0,0.5,1,0,0,0,0]]' data-kf-base="c" class="kf kf-hidden steps"><span class="step">1 · Request</span><span class="step">2 · Short chat</span><span class="step">3 · Meet</span></div>
+      <div data-kf='[[0.69,0.04,0.95,0.9,20,28,0,0],[0.77,0.04,0.4,1,4,-14,-3,1],[0.9,0.04,0.4,1,0,-6,-1,1],[1,0.04,0.4,1,0,-4,0,1]]' data-kf-base="c" class="kf kf-hidden z2"><div class="phone"><div class="phone-screen"><picture><source media="(prefers-color-scheme: dark)" srcset="img/screens/group-chat-dark-400.webp 400w, img/screens/group-chat-dark-800.webp 800w" sizes="min(360px, 36svh, 74vw)"><img src="img/screens/group-chat-light-800.webp" srcset="img/screens/group-chat-light-400.webp 400w, img/screens/group-chat-light-800.webp 800w" sizes="min(360px, 36svh, 74vw)" alt="A three-person table chat" width="800" height="1739" decoding="async" loading="lazy"></picture></div></div></div>
+      <div data-kf='[[0.74,-0.2,0.55,0.4,0,0,-12,0],[0.81,-0.2,0.33,1,0,0,-4,1],[1,-0.2,0.33,1,0,0,-4,1]]' data-kf-base="c" class="kf kf-hidden kf-table-art"><img class="art" src="img/art/groups_empty.svg" alt="" width="500" height="500"></div>
     </div>
-  </footer>
+  </section>
+
+<section class="statement" aria-label="What Bara is">
+  <div class="float st-l" aria-hidden="true" data-px="0.25" data-pxx="0" data-rot="-0.02"><img class="art" src="img/art/onboarding_moment.svg" alt="" width="600" height="600" loading="lazy"></div>
+  <div class="float st-r" aria-hidden="true" data-px="-0.2" data-pxx="0" data-rot="0.015"><img class="art" src="img/art/nearby_empty.svg" alt="" width="500" height="500" loading="lazy"></div>
+  <p data-reveal><span data-word>Bara </span><span data-word>shows </span><span data-word>you </span><span data-word>people </span><span data-word>nearby </span><span data-word>who </span><span data-word>are </span><span data-word>open </span><span data-word>to </span><span data-word>talking </span><span data-word>right </span><span data-word>now. </span><span data-word>You </span><span data-word>see </span><span data-word>a </span><span data-word>made-up </span><span data-word>name, </span><span data-word>say </span><span data-word>hi, </span><span data-word>and </span><span data-word>have </span><span data-word>a </span><span data-word>short </span><span data-word>chat. </span><span data-word>If </span><span data-word>you </span><span data-word>both </span><span data-word>want </span><span data-word>to, </span><span data-word>you </span><span data-word>meet. </span></p>
+</section>
+
+<section class="control" aria-labelledby="safe-h">
+  <div class="float ct-l" aria-hidden="true" data-px="0.3" data-pxx="0" data-rot="0.03"><img class="art" src="img/art/onboarding_alias.svg" alt="" width="512" height="512" loading="lazy"></div>
+  <div class="float ct-r" aria-hidden="true" data-px="0.15" data-pxx="0" data-rot="-0.025"><img class="art" src="img/art/onboarding_keep.svg" alt="" width="600" height="600" loading="lazy"></div>
+  <div class="control-inner">
+    <h2 id="safe-h" class="big-h2">You stay in <mark style="--r:-1.5deg">control</mark>.</h2>
+    <ul class="bento">
+      <li class="tile tile-wide"><div class="tile-art" data-px="0.12"><img class="art" src="img/art/onboarding_keep.svg" alt="" width="600" height="600" loading="lazy"></div><div class="tile-text"><h3>A made-up name, different for everyone.</h3><p>People see a made-up name and a coloured shape, and each person sees a different one for you. Your real name and photo are never shown to others.</p></div></li>
+      <li class="tile"><div class="tile-text"><h3>No pin on a map.</h3><p>Nobody sees your exact location.</p></div></li>
+      <li class="tile"><div class="tile-text"><h3>Counts, not people.</h3><p>Explore shows how many people are at a place, never who they are, and hides places with too few people.</p></div></li>
+      <li class="tile"><div class="tile-text"><h3>No awkward no’s.</h3><p>If someone doesn’t accept your request, you’re not told who passed.</p></div></li>
+      <li class="tile tile-wide"><div class="tile-text"><h3>Leave any time.</h3><p>Block, report or leave with no explanation. A person you block is never told.</p></div><div class="tile-art tile-art-end" data-px="0.12"><img class="art" src="img/art/invisible.svg" alt="" width="512" height="512" loading="lazy"></div></li>
+      <li class="tile"><div class="tile-text"><h3>Adults only, verified.</h3><p>Bara is for adults 18 and over, and every account is verified with a phone number.</p></div></li>
+      <li class="tile"><div class="tile-cta"><h3>More on how Bara keeps people safe.</h3><a class="btn" href="safety.html">Read about safety</a></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="who" aria-labelledby="who-h">
+  <div class="float who-l" aria-hidden="true" data-px="-0.18" data-pxx="0.15" data-rot="0.02"><img class="art" src="img/art/groups_empty.svg" alt="" width="500" height="500" loading="lazy"></div>
+  <div class="float who-r" aria-hidden="true" data-px="0.22" data-pxx="0" data-rot="-0.02"><img class="art" src="img/art/onboarding_how.svg" alt="" width="600" height="600" loading="lazy"></div>
+  <div class="who-head"><h2 id="who-h">Any kind of <mark style="--r:1deg">conversation</mark>.</h2></div>
+  <div class="marquee" aria-hidden="true" data-marquee="1"><span>A new friend</span><span class="dotsep">·</span><span class="green">A work contact</span><span class="dotsep">·</span><span>Just a good chat</span><span class="dotsep">·</span><span>A new friend</span><span class="dotsep">·</span><span class="green">A work contact</span></div>
+  <p class="who-line">A new friend, a work contact, or just a good chat. Bara isn't a dating app.</p>
+</section>
+
+<section class="closing" id="get" aria-labelledby="close-h">
+  <div class="float cl-l" aria-hidden="true" data-px="0.3" data-pxx="0" data-rot="-0.03"><img class="art" src="img/art/invisible.svg" alt="" width="512" height="512" loading="lazy"></div>
+  <div class="float cl-r" aria-hidden="true" data-px="-0.25" data-pxx="0" data-rot="0.03"><img class="art" src="img/art/onboarding_notifications.svg" alt="" width="600" height="600" loading="lazy"></div>
+  <div class="closing-art" data-px="0.25"><img class="art" src="img/art/onboarding_ready.svg" alt="" width="600" height="600" loading="lazy"></div>
+  <h2 id="close-h">Say <mark style="--r:-2deg">hi</mark> to someone <mark style="--r:1.5deg">nearby</mark>.</h2>
+  <span class="soon-pill">Coming soon to iPhone and Android</span>
+  <span class="mono">Launching first in the United States and Nepal</span>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-row">
+      <div class="footer-id"><img src="img/mark.svg" alt="" width="28" height="28"><span>© 2026 Bara Inc · <a href="mailto:support@bara.social">support@bara.social</a></span></div>
+      <div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></div>
+    </div>
+    <p class="footer-note">Screens show sample data. Place data © OpenStreetMap contributors.</p>
+  </div>
+</footer>
+</div>
 </body>
 </html>
