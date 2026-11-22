@@ -33,7 +33,7 @@ jobs:
       - name: Upload files
         run: |
           aws s3 sync . "s3://bara-website-${AWS_ACCOUNT_ID}" --delete \
-            --exclude ".git/*" --exclude ".github/*" --exclude "CNAME" --exclude ".nojekyll"
+            --exclude ".git/*" --exclude ".github/*" --exclude "CNAME" --exclude ".nojekyll" --exclude ".gitignore"
 
       - name: Clear CloudFront cache
         run: |
