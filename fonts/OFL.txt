@@ -1,10 +1,9 @@
 This license covers the fonts bundled in this directory:
 
-- Hanken Grotesk (HankenGrotesk-Regular.ttf, HankenGrotesk-Medium.ttf,
-  HankenGrotesk-SemiBold.ttf, HankenGrotesk-Bold.ttf)
+- Hanken Grotesk (HankenGrotesk-latin.woff2)
   Copyright 2021 The Hanken Grotesk Project Authors
 
-- JetBrains Mono (JetBrainsMono-Regular.ttf, JetBrainsMono-Medium.ttf)
+- JetBrains Mono (JetBrainsMono-latin.woff2)
   Copyright 2020 The JetBrains Mono Project Authors
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
