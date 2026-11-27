@@ -156,6 +156,7 @@ details p{margin:12px 0 0;font-size:16px;line-height:1.55;color:var(--text2)}
 .legal h1{margin:0;font-size:clamp(36px,5vw,52px);line-height:1.05;letter-spacing:-0.03em;font-weight:800}
 .legal h2{margin:16px 0 0;font-size:22px;counter-increment:section}
 .legal h2::before{content:counter(section) ". "}
+.legal h3{margin:8px 0 0;font-size:18px;line-height:1.3}
 .legal p,.legal ul{margin:0;font-size:17px;line-height:1.7;max-width:65ch}
 .legal ul{padding-left:22px}
 .legal li+li{margin-top:8px}
